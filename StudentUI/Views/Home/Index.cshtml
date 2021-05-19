@@ -1,0 +1,22 @@
+﻿@using DataAccess.concrete
+@model List<Lesson>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div>
+    <table>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
